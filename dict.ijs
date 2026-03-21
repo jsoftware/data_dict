@@ -84,9 +84,9 @@ else.
   items =: {{ 
     (0 0) 16!:_9 dict NB. read-lock.
     cnt =. count ''
-    r =. cnt {. (1) 16!:_8 dict
+    r =. memu (<<<0 (16!:_5) dict) { 1 (16!:_8) dict
     if. -. valueshape -: 0 do. 
-      r =. r ,&< cnt {. (2) 16!:_8 dict
+      r =. r ,&< memu (<<<0 (16!:_5) dict) { 2 (16!:_8) dict
     end.
     (1 0) 16!:_9 dict
     r
