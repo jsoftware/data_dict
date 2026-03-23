@@ -81,11 +81,11 @@ if. index_type -: 'tree' do.
   until =: _&$: : ((mget~ (2b101001 + valuemask) , check1x)~)
   range =: 1 1&$: : ((mget~ 2b1001000 + valuemask + #.@:|.@:(13!:8@3^:(1 1 -.@-: e.&0 1))@:(13!:8@14^:((, 2) -.@-: $)))~)
 else.
-  items =: {{ 
+  items =: {{
     (0 0) 16!:_9 dict NB. read-lock.
     cnt =. count ''
     r =. memu (<<<0 (16!:_5) dict) { 1 (16!:_8) dict
-    if. -. valueshape -: 0 do. 
+    if. -. valueshape -: 0 do.
       r =. r ,&< memu (<<<0 (16!:_5) dict) { 2 (16!:_8) dict
     end.
     (1 0) 16!:_9 dict
