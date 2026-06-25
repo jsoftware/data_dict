@@ -4,9 +4,9 @@ DESCRIPTION=: 0 : 0
 Dictionary data structure
 )
 
-VERSION=: '1.1.3'
+VERSION=: '1.1.4'
 
-RELEASE=: 'j9.7'
+RELEASE=: 'j9.8'
 
 FOLDER=: 'data/dict'
 
